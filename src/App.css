@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -15,13 +19,37 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 20vh;
+  min-height: 100vh; /* Ensure header takes up at least a whole page */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-header-content {
+  margin-left: 20px;
+  width: 100%; /* Ensure it takes the full width */
+  height: 100%; /* Ensure it takes the full height */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info a {
+  color: #61dafb;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.contact-info p {
+  margin: 5px 0;
 }
 
 .App-link {
@@ -29,6 +57,7 @@
 }
 
 main {
+  flex: 1;
   padding: 20px;
 }
 
@@ -36,9 +65,8 @@ footer {
   background-color: #282c34;
   color: white;
   padding: 10px;
-  position: fixed;
   width: 100%;
-  bottom: 0;
+  text-align: center;
 }
 
 @keyframes App-logo-spin {
@@ -48,4 +76,27 @@ footer {
   to {
     transform: rotate(360deg);
   }
+}
+
+.section {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.section:hover {
+  transform: scale(1.05);
+}
+
+.section-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
 }
