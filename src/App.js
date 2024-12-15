@@ -1,5 +1,9 @@
 import './App.css';
 import educationImg from './education_img.jpg'; // Ensure you have this image in the src folder
+import projectsImg from './projects_img.jpg'; // Ensure you have this image in the src folder
+import achievementsImg from './achievements_img.jpg'; // Ensure you have this image in the src folder
+import skillsImg from './skills_img.jpg'; // Ensure you have this image in the src folder
+import languagesImg from './languages_img.jpg'; // Ensure you have this image in the src folder
 
 function App() {
   return (
@@ -26,25 +30,25 @@ function App() {
             <p>Click to expand</p>
           </div>
         </div>
-        <div className="section projects" style={{ backgroundImage: `url(${educationImg})` }}>
+        <div className="section projects" style={{ backgroundImage: `url(${projectsImg})` }}>
           <div className="section-content">
             <h2>Projects</h2>
             <p>Click to expand</p>
           </div>
         </div>
-        <div className="section skills" style={{ backgroundImage: `url(${educationImg})` }}>
+        <div className="section skills" style={{ backgroundImage: `url(${skillsImg})` }}>
           <div className="section-content">
             <h2>Skills</h2>
             <p>Click to expand</p>
           </div>
         </div>
-        <div className="section achievements" style={{ backgroundImage: `url(${educationImg})` }}>
+        <div className="section achievements" style={{ backgroundImage: `url(${achievementsImg})` }}>
           <div className="section-content">
             <h2>Achievements</h2>
             <p>Click to expand</p>
           </div>
         </div>
-        <div className="section languages" style={{ backgroundImage: `url(${educationImg})` }}>
+        <div className="section languages" style={{ backgroundImage: `url(${languagesImg})` }}>
           <div className="section-content">
             <h2>Languages</h2>
             <p>Click to expand</p>
