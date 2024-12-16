@@ -115,18 +115,18 @@ function Section({ title, imageUrl }) {
 
   return (
     <div>
-      
       <div className="section" style={{ backgroundImage: `url(${imageUrl})` }} onClick={() => setIsExpanded(!isExpanded)}>
         <div className="section-content">
           <h2>{title}</h2>
-          <p>Click to expand</p>
+          {!isExpanded ? <p>Click to expand</p> : <p>Click to collapse</p>}
         </div>
       </div>
 
-      <div className="information">
-        {isExpanded && renderContent()}
-      </div>
-
+      {isExpanded && (
+        <div className="information">
+          {renderContent()}
+        </div>
+      )}
     </div>
   );
 }
