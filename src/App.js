@@ -8,7 +8,7 @@ import languagesImg from './languages_img.jpg'; // Ensure you have this image in
 
 function EducationInfo() {
   return (
-    <div>
+    <div className="information">
       <h3>Education</h3>
       <h4>The University of Manchester</h4>
       <p>Location: Manchester, UK</p>
@@ -26,10 +26,10 @@ function EducationInfo() {
   );
 }
 
-function ProjectsInfo() {
+function SchoolProjects() {
   return (
-    <div>
-      <h3>Projects</h3>
+    <div className="information">
+      <h3>School Projects</h3>
       <h4>Magic Bakery (Java Bakery Game)</h4>
       <p>Location: Manchester, UK</p>
       <p>Institution: The University of Manchester</p>
@@ -73,9 +73,51 @@ function ProjectsInfo() {
   );
 }
 
+function PersonalProjects() {
+  return (
+    <div className="information">
+      <h3>Personal Projects</h3>
+      <h4>Connect Four (Game using Unity/C#)</h4>
+      <p>Location: Remote</p>
+      <p>Duration: Aug 2024</p>
+      <p>• Designed and developed a full‑featured Connect Four game using the Unity engine, implementing core gameplay mechanics such as turn‑based play, win condition detection, and an interactive user interface.</p>
+      <p>• Utilised C# to manage game logic, player interactions, and dynamic UI updates, ensuring a seamless and responsive gaming experience.</p>
+      <p>• Implemented advanced features, including dynamic GameObject creation, animated piece dropping, and flexible gameboard sizing to enhance player engagement.</p>
+      <p>• Currently adding online multiplayer functionality and a single‑player mode against AI, expanding the game’s replayability and appeal.</p>
+      <p>• Employed Unity’s physics system for realistic piece movement, and invested extensive time in debugging and testing to ensure a polished final product, with comprehensive debug logs capturing various game states.</p>
+      <p>• Researched and adhered to C# naming conventions to ensure code readability and maintainability, contributing to a well‑organised and professional codebase.</p>
+      <p>• Applied version control practices using Git, maintaining a clean and organised project repository on GitHub for collaborative development and issue tracking.</p>
+      <p>• Technical Skills: Unity, C#, Game Development, Git.</p>
+      <p>• Soft Skills: Problem‑Solving, Self‑Learning, Project Management, Attention to Detail.</p>
+      <h4>Infoboard (Web app using React.js)</h4>
+      <p>Location: Remote</p>
+      <p>Duration: Aug 2024</p>
+      <p>• Solely developed a responsive web application using React.js, which integrates multiple API calls to provide users with real‑time information.</p>
+      <p>• Implemented sections for current weather in any chosen location, bus times for selected bus stops, and tube service statuses for selected lines.</p>
+      <p>• Employed data manipulation techniques, including sorting, filtering, and combining API responses to create a cohesive user experience.</p>
+      <p>• Utilised React features like hooks, props, and dependencies, while managing state and side effects efficiently.</p>
+      <p>• Incorporated recursive functions and leveraged local storage to enhance user interaction and performance.</p>
+      <p>• Conducted thorough testing and debugging to ensure the reliability and accuracy of data displayed across different scenarios.</p>
+      <p>• Technical Skills: HTML/CSS, JavaScript (React.js), API Interaction, Git, Responsive Design, State Management, Data Handling.</p>
+      <p>• Soft Skills: Problem‑Solving, Self‑Management, Attention to Detail, User Experience Design.</p>
+      <h4>CSV Reader (Web app using React.js)</h4>
+      <p>Location: Remote</p>
+      <p>Duration: Aug 2024</p>
+      <p>• Developed a React.js application to verify ISIN numbers against a local CSV file of approved reporting offshore funds from the gov.uk website.</p>
+      <p>• Learned and applied fundamental React concepts, including useEffect and useState hooks, to manage component state and side effects.</p>
+      <p>• Enhanced problem‑solving skills through the development of an algorithm that checks and validates ISIN numbers.</p>
+      <p>• Implemented efficient data parsing and validation techniques to ensure accurate and timely information retrieval.</p>
+      <p>• Applied version control best practices using Git for collaborative development and version management.</p>
+      <p>• Technical Skills: HTML/CSS, JavaScript (React.js), CSV File Handling, Git, Data Parsing, Algorithm Development, State Management.</p>
+      <p>• Soft Skills: Problem‑Solving, Self‑Learning, Attention to Detail, Analytical Thinking, Technical Communication.</p>
+      <p>Source code and builds are available on my public GitHub (HerreroRocher).</p>
+    </div>
+  );
+}
+
 function SkillsInfo() {
   return (
-    <div>
+    <div className="information">
       <h3>Skills</h3>
       <h4>Programming</h4>
       <p>Python (PyGame, Tkinter), HTML/CSS, JavaScript (Node.js, React.js), SQL, Java, Git, Unity, C#, Data Parsing, Algorithm Development, State Management, API Interaction.</p>
@@ -89,7 +131,7 @@ function SkillsInfo() {
 
 function AchievementsInfo() {
   return (
-    <div>
+    <div className="information">
       <h3>Achievements</h3>
       <p>2016 Semi‑Finalist, BBC Top Class (Similar to University Team Challenge Show) Edinburgh, UK</p>
       <p>2017 Gold, Junior Mathematical Challenge (UK Mathematics Trust) London, UK</p>
@@ -101,7 +143,7 @@ function AchievementsInfo() {
 
 function LanguagesInfo() {
   return (
-    <div>
+    <div className="information">
       <h3>Languages</h3>
       <p>English C2 Native</p>
       <p>Spanish C1 Fluent</p>
@@ -117,7 +159,12 @@ function Section({ title, imageUrl }) {
       case 'Education':
         return <EducationInfo />;
       case 'Projects':
-        return <ProjectsInfo />;
+        return (
+          <>
+            <SchoolProjects />
+            <PersonalProjects />
+          </>
+        );
       case 'Skills':
         return <SkillsInfo />;
       case 'Achievements':
@@ -139,7 +186,7 @@ function Section({ title, imageUrl }) {
       </div>
 
       {isExpanded && (
-        <div className="information">
+        <div>
           {renderContent()}
         </div>
       )}
