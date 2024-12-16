@@ -107,3 +107,21 @@ footer {
   padding: 20px;
   border-radius: 10px;
 }
+
+.section-content p {
+  margin: 10px 0;
+}
+
+.section-content h3 {
+  margin-top: 20px;
+}
+
+.information {
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
