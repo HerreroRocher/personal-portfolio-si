@@ -126,3 +126,28 @@ footer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
+
+.subsection {
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.subsection:hover {
+  transform: scale(1.05);
+}
+
+.subsection-container{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+
+}

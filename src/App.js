@@ -5,6 +5,8 @@ import projectsImg from './projects_img.jpg'; // Ensure you have this image in t
 import achievementsImg from './achievements_img.jpg'; // Ensure you have this image in the src folder
 import skillsImg from './skills_img.jpg'; // Ensure you have this image in the src folder
 import languagesImg from './languages_img.jpg'; // Ensure you have this image in the src folder
+import homeProjectsImg from './home_projects_img.jpg'; // Ensure you have this image in the src folder
+import schoolProjectsImg from './school_projects_img.jpeg'; // Ensure you have this image in the src folder
 
 function EducationInfo() {
   return (
@@ -151,6 +153,52 @@ function LanguagesInfo() {
   );
 }
 
+function SubsectionPersonalProjects() {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  return (
+    <div>
+      <div className='subsection-container'>
+      <div className="subsection" style={{ backgroundImage: `url(${homeProjectsImg})` }} onClick={() => setIsExpanded(!isExpanded)}>
+        <div className="section-content">
+          <h3>Personal Projects</h3>
+          {!isExpanded ? <p>Click to expand</p> : <p>Click to collapse</p>}
+        </div>
+      </div>
+      </div>
+
+      {isExpanded && (
+        <div className="information">
+          <PersonalProjects />
+        </div>
+      )}
+    </div>
+  );
+}
+
+function SubsectionUniProjects() {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  return (
+    <div>
+      <div className='subsection-container'>
+        <div className="subsection" style={{ backgroundImage: `url(${schoolProjectsImg})` }} onClick={() => setIsExpanded(!isExpanded)}>
+          <div className="section-content">
+            <h3>School Projects</h3>
+            {!isExpanded ? <p>Click to expand</p> : <p>Click to collapse</p>}
+          </div>
+        </div>
+      </div>
+
+      {isExpanded && (
+        <div className="information">
+          <SchoolProjects />
+        </div>
+      )}
+    </div>
+  );
+}
+
 function Section({ title, imageUrl }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -161,8 +209,8 @@ function Section({ title, imageUrl }) {
       case 'Projects':
         return (
           <>
-            <SchoolProjects />
-            <PersonalProjects />
+            <SubsectionUniProjects />
+            <SubsectionPersonalProjects />
           </>
         );
       case 'Skills':
