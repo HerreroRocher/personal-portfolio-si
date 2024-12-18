@@ -28,10 +28,28 @@ function EducationInfo() {
   );
 }
 
-function SchoolProjects() {
+function HashSetVSBSTree() {
   return (
     <div className="information">
-      <h3>School Projects</h3>
+      <h4>HashSet vs BSTree Investigation and Testing (Python testing, plotting and analysis)</h4>
+      <p>Location: Manchester, UK</p>
+      <p>Institution: The University of Manchester</p>
+      <p>Duration: Nov 2024</p>
+      <p>• Developed and implemented various data structures including binary search trees and hash sets, focusing on hash table sizing, load factors, and rehashing algorithms.</p>
+      <p>• Created automated experiments to investigate the complexities of these data structures, using Python and the matplotlib library to visualise results.</p>
+      <p>• Conducted performance comparisons between different data structures, such as binary search trees and hash sets, and analysed the results to validate hypotheses.</p>
+      <p>• Utilised sorting algorithms and implemented collision resolution techniques in hash tables.</p>
+      <p>• Employed data manipulation techniques and conducted thorough testing to ensure the accuracy and reliability of the data structures.</p>
+      <p>• Technical Skills: Python, Data Structures, Algorithms, Performance Analysis, Matplotlib, Data Visualisation.</p>
+      <p>• Soft Skills: Analytical Thinking, Problem-Solving, Research, Attention to Detail.</p>
+    </div>
+  );
+}
+
+
+function MagicBakery() {
+  return (
+    <div className="information">
       <h4>Magic Bakery (Java Bakery Game)</h4>
       <p>Location: Manchester, UK</p>
       <p>Institution: The University of Manchester</p>
@@ -41,6 +59,13 @@ function SchoolProjects() {
       <p>• Conducted thorough testing and debugging to ensure the accuracy and reliability of game mechanics.</p>
       <p>• Technical Skills: Java, Javadoc, UML Diagrams, Git, Object‑Oriented Programming (OOP), Algorithm Design.</p>
       <p>• Soft Skills: Time Management, Computational Thinking, Attention to Detail, Problem‑Solving.</p>
+    </div>
+  );
+}
+
+function FoodFinder() {
+  return (
+    <div className="information">
       <h4>Food Finder (First Year Team Project using Node.js)</h4>
       <p>Location: Manchester, UK</p>
       <p>Institution: The University of Manchester</p>
@@ -51,6 +76,13 @@ function SchoolProjects() {
       <p>• My role was the back‑end developer, where I implemented code to retrieve data from the database, using an API to respond to requests from the front‑end, as well as dealing with sorting, limits and joining tables in the database.</p>
       <p>• Technical Skills: HTML/CSS, JavaScript (Node.js), SQL, API Development, Git.</p>
       <p>• Soft Skills: Time Management, Teamwork, Presentation Skills, Communication, Problem‑Solving.</p>
+    </div>
+  );
+}
+
+function Dodger() {
+  return (
+    <div className="information">
       <h4>Dodger (Python Tkinter Game)</h4>
       <p>Location: Manchester, UK</p>
       <p>Institution: The University of Manchester</p>
@@ -61,6 +93,13 @@ function SchoolProjects() {
       <p>• Designed SQL databases to store player information (username, password hashes, scores, time remaining), to display the top five scores after the user loses the game.</p>
       <p>• Technical Skills: Python(Tkinter), File Manipulation, Git.</p>
       <p>• Soft Skills: Time Management, Computational Thinking, Problem‑solving, Creativity.</p>
+    </div>
+  );
+}
+
+function JungleShooter() {
+  return (
+    <div className="information">
       <h4>Jungle Shooter (AQA A‑Level Project using Python PyGame)</h4>
       <p>Location: London, UK</p>
       <p>Institution: Finchley Catholic High School</p>
@@ -75,10 +114,9 @@ function SchoolProjects() {
   );
 }
 
-function PersonalProjects() {
+function ConnectFour() {
   return (
     <div className="information">
-      <h3>Personal Projects</h3>
       <h4>Connect Four (Game using Unity/C#)</h4>
       <p>Location: Remote</p>
       <p>Duration: Aug 2024</p>
@@ -91,7 +129,14 @@ function PersonalProjects() {
       <p>• Applied version control practices using Git, maintaining a clean and organised project repository on GitHub for collaborative development and issue tracking.</p>
       <p>• Technical Skills: Unity, C#, Game Development, Git.</p>
       <p>• Soft Skills: Problem‑Solving, Self‑Learning, Project Management, Attention to Detail.</p>
-      <h4>Infoboard (Web app using React.js)</h4>
+    </div>
+  );
+}
+
+function Infoboard() {
+  return (
+    <div className="information">
+      <h4><a href="https://herrerorocher.github.io/infoboard" target="_blank" rel="noopener noreferrer">Infoboard (Web app using React.js)</a></h4>
       <p>Location: Remote</p>
       <p>Duration: Aug 2024</p>
       <p>• Solely developed a responsive web application using React.js, which integrates multiple API calls to provide users with real‑time information.</p>
@@ -102,6 +147,14 @@ function PersonalProjects() {
       <p>• Conducted thorough testing and debugging to ensure the reliability and accuracy of data displayed across different scenarios.</p>
       <p>• Technical Skills: HTML/CSS, JavaScript (React.js), API Interaction, Git, Responsive Design, State Management, Data Handling.</p>
       <p>• Soft Skills: Problem‑Solving, Self‑Management, Attention to Detail, User Experience Design.</p>
+    </div>
+  );
+}
+
+
+function CSVReader() {
+  return (
+    <div className="information">
       <h4>CSV Reader (Web app using React.js)</h4>
       <p>Location: Remote</p>
       <p>Duration: Aug 2024</p>
@@ -114,6 +167,46 @@ function PersonalProjects() {
       <p>• Soft Skills: Problem‑Solving, Self‑Learning, Attention to Detail, Analytical Thinking, Technical Communication.</p>
       <p>Source code and builds are available on my public GitHub (HerreroRocher).</p>
     </div>
+  );
+}
+
+function PersonalPortfolio() {
+  return (
+    <div className="information">
+      <h4>Personal Portfolio (Web App using React.js)</h4>
+      <p>Location: Remote</p>
+      <p>Duration: Ongoing</p>
+      <p>• Designed and developed a personal portfolio website using React.js, showcasing projects, skills, and professional achievements.</p>
+      <p>• Implemented responsive design principles to ensure the website is accessible and visually appealing on various devices.</p>
+      <p>• Utilised React components, hooks, and state management to create a dynamic and interactive user experience.</p>
+      <p>• Deployed the website using GitHub Pages, ensuring continuous integration and delivery.</p>
+      <p>• Applied version control practices using Git, maintaining a clean and organised project repository on GitHub.</p>
+      <p>• Technical Skills: React.js, HTML/CSS, JavaScript, Git, Responsive Design.</p>
+      <p>• Soft Skills: Problem‑Solving, Self‑Learning, Project Management, Attention to Detail.</p>
+    </div>
+  );
+}
+
+function SchoolProjects() {
+  return (
+    <>
+      <HashSetVSBSTree />
+      <MagicBakery />
+      <FoodFinder />
+      <Dodger />
+      <JungleShooter />
+    </>
+  );
+}
+
+function PersonalProjects() {
+  return (
+    <>
+      <ConnectFour />
+      <Infoboard />
+      <CSVReader />
+      <PersonalPortfolio />
+    </>
   );
 }
 
@@ -168,7 +261,7 @@ function SubsectionPersonalProjects() {
       </div>
 
       {isExpanded && (
-        <div className="information">
+        <div>
           <PersonalProjects />
         </div>
       )}
@@ -191,7 +284,7 @@ function SubsectionUniProjects() {
       </div>
 
       {isExpanded && (
-        <div className="information">
+        <div>
           <SchoolProjects />
         </div>
       )}
@@ -250,7 +343,7 @@ function App() {
         <div className="App-header-content">
           <h1>Welcome to Daniel's Portfolio</h1>
           <p>
-            Here you will find information about my projects, skills, and achievements.
+            Here you will find information about my projects, skills, and professional achievements.
           </p>
           <div className="contact-info">
             <a href="https://github.com/HerreroRocher" target="_blank" rel="noopener noreferrer">GitHub</a>
