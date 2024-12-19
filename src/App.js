@@ -15,10 +15,10 @@ function EducationInfo() {
       <h4>The University of Manchester</h4>
       <p>Location: Manchester, UK</p>
       <p>Degree: BSc in Computer Science with Industrial Experience</p>
-      <p>Duration: Sept 2023 ‑ Jul 2027</p>
+      <p>Duration: Sept 2023 ‑ Jul 2026</p>
       <p>• Achieved course units: Computer Engineering(63%), Computer Architecture(77%), Programming 1(71%), First Year Team Project(78%), Data Science(75%), Operating Systems(67%), Computation(72%)</p>
       <p>• Current course units: Software Engineering, Programming Languages & Paradigms, Algorithms and Data Structures, Logic and Modelling, Intro to AI, Databases, Machine Learning, Distributed Systems</p>
-      <p>• Expected first class degree (2027)</p>
+      <p>• Expected first class degree (2026)</p>
       <h4>Finchley Catholic High School</h4>
       <p>Location: London, UK</p>
       <p>Duration: Sept 2016 ‑ Jun 2023</p>
@@ -360,7 +360,7 @@ function App() {
             Hi, I'm Daniel. I'm a passionate software engineer with experience in various technologies. I enjoy solving complex problems and building innovative solutions. In my free time, I like to learn new skills and work on personal projects.
           </p>
           <p>
-            A second‑year University of Manchester undergraduate with a passion for programming and 6 years of semi‑regular coding experience. I am enthusiastic about solving complex problems and am actively seeking a Software Engineer placement or summer internship to apply my skills. My quick learning ability enables me to rapidly adapt to new technologies and contribute effectively to team projects. I am excited to start my career in computing and have a strong desire to demonstrate my skills in the industry.
+            A second‑year University of Manchester undergraduate with a passion for programming and 6 years of semi‑regular coding experience. I am enthusiastic about solving complex problems and am actively seeking a Software Engineer summer internship to apply my skills. My quick learning ability enables me to rapidly adapt to new technologies and contribute effectively to team projects. I am excited to start my career in computing and have a strong desire to demonstrate my skills in the industry.
           </p>
         </section>
         <Section title="Education" imageUrl={educationImg} />
