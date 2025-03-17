@@ -28,8 +28,8 @@ function Uni(){
     <p>Duration: Sep 2023 ‑ Jul 2026</p>
     <p>• Expected graduation in 2026</p>
     <p>• Expected first class degree </p>
-    <p>• Achieved course units: Computer Engineering(63%), Computer Architecture(77%), Programming 1(71%), First Year Team Project(78%), Data Science(75%), Operating Systems(67%), Computation(72%)</p>
-    <p>• Current course units: Software Engineering, Programming Languages & Paradigms, Algorithms and Data Structures, Logic and Modelling, Intro to AI, Databases, Machine Learning, Distributed Systems</p>
+    <p>• Achieved relevant course units: Programming 1(71%), First Year Team Project(78%), Data Science(75%), Operating Systems(67%), Computation(72%), Logic(80%), Database Systems(72%), Software Engineering 1(71%)</p>
+    <p>• Current course units: Software Engineering 2, Programming Languages & Paradigms, Algorithms and Data Structures, Machine Learning, Distributed Systems, Visual Computing</p>
   </div>
   )
 }
